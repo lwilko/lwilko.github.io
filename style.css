@@ -1,9 +1,48 @@
-h1 {
-    font-family: "Andale Mono";
+.header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+}
+
+.wrapper {
+    padding: 10px;
+    max-height: 1200px;
+    justify-content: center;
+}
+
+.square {
+    float:left;
+    width: 50vw;
+    height: 50vw;
+    color: "green";
+}
+
+#about_square {
+    background-image: url("about-me.png");
+}
+
+#code_square {
+    background-image: url("coding.png");
+}
+
+#photography_square {
+    background-image: url("photography.png");
+}
+
+#links_square {
+    background-image: url("links.png");
+}
+
+.header h1 {
+    font-family: "Andale Mono", Courier, monospace;
     font-size: 16;
     font-weight: bolder;
 }
 
+h1 {
+    font-family:'Trebuchet MS', Helvetica, sans-serif;
+}
+
 p {
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 }
