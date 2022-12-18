@@ -1,3 +1,9 @@
+/* Generic styles */
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header styles */
 .header {
     text-align: center;
     background: white;
@@ -5,6 +11,21 @@
     padding-right: 28%;
 }
 
+.header h1 {
+    font-family: "Andale Mono", Courier, monospace;
+    font-weight: bolder;
+}
+
+/* Footer styles */
+.footer {
+    text-align: right;
+}
+
+.footer p {
+    font-size: 10pt;
+}
+
+/* Homepage */
 .flex-container {
     display: flex;
     flex-direction: row;
@@ -19,7 +40,8 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    align-items: center;
+    alig
+    n-items: center;
     margin: 1%;
     float:left;
     width: 400px;
@@ -47,18 +69,8 @@
     background-image: url("./images/links.png");
 }
 
-.header h1 {
-    font-family: "Andale Mono", Courier, monospace;
-    font-size: 16;
-    font-weight: bolder;
-}
-
 .square a {
     font-family: "Andale Mono", Courier, monospace;
     color: aliceblue;
     background-color: black;
-}
-
-p {
-    font-family: Arial, Helvetica, sans-serif;
 }
