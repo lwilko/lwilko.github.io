@@ -3,17 +3,24 @@ p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+    font-family: "Andale Mono", Courier, monospace;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+h2 {
+    font-family: "Andale Mono", Courier, monospace;
+    font-size: 1.5em;
+    text-align: left;
+}
+
 /* Header styles */
 .header {
     text-align: center;
     background: white;
     padding-left: 28%;
     padding-right: 28%;
-}
-
-.header h1 {
-    font-family: "Andale Mono", Courier, monospace;
-    font-weight: bolder;
 }
 
 .header a {
@@ -24,15 +31,22 @@ p {
 .main-body {
     padding-left: 30%;
     padding-right: 30%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .main-body img {
     max-width: 100%;
 }
 
+.emph {
+    color: purple;
+    font-weight: bold;
+}
+
 /* Footer styles */
 .footer {
     text-align: right;
+    padding: 1%;
 }
 
 .footer p {
