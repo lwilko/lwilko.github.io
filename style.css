@@ -99,3 +99,21 @@ h2 {
     color: aliceblue;
     background-color: black;
 }
+
+/* Photography */
+
+#gallery {
+    line-height:0;
+    -webkit-column-count:2; /* split it into 5 columns */
+    -webkit-column-gap:5px; /* give it a 5px gap between columns */
+    -moz-column-count:2;
+    -moz-column-gap:5px;
+    column-count:2;
+    column-gap:5px;
+ }
+
+ #gallery img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom:5px; /* to match column gap */
+ }
