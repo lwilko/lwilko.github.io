@@ -110,6 +110,8 @@ h2 {
     -moz-column-gap:5px;
     column-count:3;
     column-gap:5px;
+    padding-left:1em;
+    padding-right:1em;
  }
 
  #gallery img {
