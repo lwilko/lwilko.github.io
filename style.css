@@ -54,13 +54,17 @@ h2 {
 }
 
 /* Homepage */
-.flex-container {
-    display: flex;
-    row-gap: 0.2em;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-}
+.container {
+    line-height:0;
+    -webkit-column-count:2; /* split it into 5 columns */
+    -webkit-column-gap:0.5em; /* give it a 5px gap between columns */
+    -moz-column-count:2;
+    -moz-column-gap:0.5em;
+    column-count:2;
+    column-gap:0.5em;
+    padding-left:15em;
+    padding-right:15em;
+ }
 
 .square {
     max-width: 50%;
@@ -68,9 +72,9 @@ h2 {
     justify-content: center;
     align-content: center;
     align-items: center;
+    width:100%;
+    height:auto;
     float:left;
-    width: 400px;
-    height: 250px;
     text-align: center;
     background-color: "#CE7DEC";
     background-size: contain;
@@ -82,7 +86,7 @@ h2 {
     background-image: url("./images/about-me.png");
 }
 
-#code_square {
+#work_square {
     background-image: url("./images/coding.png");
 }
 
