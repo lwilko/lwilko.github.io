@@ -82,6 +82,10 @@ h2 {
     margin:1em;
 }
 
+.square:hover {
+    opacity: 0.85;
+}
+
 .square a {
     font-family: "Andale Mono", Courier, monospace;
     color: aliceblue;
