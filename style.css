@@ -56,6 +56,7 @@ h2 {
 /* Homepage */
 .flex-container {
     display: flex;
+    row-gap: 0.2em;
     flex-direction: row;
     justify-content: center;
     width: 100%;
@@ -67,7 +68,6 @@ h2 {
     justify-content: center;
     align-content: center;
     align-items: center;
-    margin: 1%;
     float:left;
     width: 400px;
     height: 250px;
@@ -102,7 +102,7 @@ h2 {
 
 /* Photography */
 
-#gallery {
+.gallery {
     line-height:0;
     -webkit-column-count:3; /* split it into 5 columns */
     -webkit-column-gap:5px; /* give it a 5px gap between columns */
@@ -114,8 +114,32 @@ h2 {
     padding-right:1em;
  }
 
- #gallery img {
+ .gallery img {
     width: 100% !important;
     height: auto !important;
     margin-bottom:5px; /* to match column gap */
+ }
+
+ @media screen and (max-width: 1500px) {
+    .gallery {
+     -moz-column-count:    3;
+     -webkit-column-count: 3;
+     column-count:         3;
+    }
+ }
+
+ @media screen and (max-width: 1100px) {
+    .gallery {
+     -moz-column-count:    2;
+     -webkit-column-count: 2;
+     column-count:         2;
+    }
+ }
+
+ @media screen and (max-width: 500px) {
+    .gallery {
+     -moz-column-count:    1;
+     -webkit-column-count: 1;
+     column-count:         1;
+    }
  }
