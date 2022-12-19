@@ -46,7 +46,9 @@ h2 {
 /* Footer styles */
 .footer {
     text-align: right;
-    padding: 1%;
+    padding: 0.5em;
+    padding-top: 5em;
+
 }
 
 .footer p {
