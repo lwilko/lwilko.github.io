@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ '/path/to/styles.css' | url }}">
+    <!-- Add any additional meta tags, stylesheets, or scripts here -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ '/' | url }}">Home</a></li>
+                <li><a href="{{ '/about' | url }}">About</a></li>
+                <li><a href="{{ '/contact' | url }}">Contact</a></li>
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </nav>
+        <h1><a href="{{ '/' | url }}">Your Site Name</a></h1>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+        <!-- The content block will be overridden by child templates -->
+    </main>
+
+    <footer>
+        <p>&copy; {{ currentYear }} Your Site Name</p>
+        <!-- Add footer content or scripts here -->
+    </footer>
+</body>
+</html>
