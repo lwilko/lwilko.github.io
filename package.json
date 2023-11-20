@@ -1,0 +1,25 @@
+{
+  "name": "lwilko.github.io",
+  "version": "2.0.0",
+  "description": "First 11ty build for website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lwilko/lwilko.github.io.git"
+  },
+  "author": "Levin Wilkinson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lwilko/lwilko.github.io/issues"
+  },
+  "homepage": "https://github.com/lwilko/lwilko.github.io",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0"
+  },
+  "dependencies": {
+    "nunjucks": "^3.2.3"
+  }
+}

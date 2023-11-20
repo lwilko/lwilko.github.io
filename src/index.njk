@@ -1,0 +1,41 @@
+---
+title: Levin Wilkinson
+changeFreq: daily
+description: Personal website of Levin Wilkinson
+layout: 'layout_home.njk'
+---
+{# Header: title & bio #}
+<div class="main-body">
+    <p>hello! my name is levin. i'm a 25-year-old data scientist, software engineer and games nerd based in glasgow, scotland. <span>🏴󠁧󠁢󠁳󠁣󠁴󠁿</span></p>
+    <p>you can find me on <a href="https://github.com/lwilko">github</a>, <a href="https://www.linkedin.com/in/l-wilko/">linkedin</a> and <a href="https://twitter.com/wilkotweets">twitter</a> (for as long as it lasts).</p>
+</div>
+
+{# Links: About me, Work, Photos & Links #}
+<div class="flex-container">
+    <a href="{{ '/about' | url }}">
+    <div class="square", id="about_square">
+        <h1>about me</h1>
+        </div>
+    </a>
+    
+    <a href="{{ '/work' | url }}">
+    <div class="square", id="work_square">
+         <h1>work</h1>
+    </div>
+    </a>
+
+    <div class="break"></div>
+
+    <a href="{{ '/photography' | url }}">
+    <div class="square", id="photography_square">
+        <h1>photos</h1>
+    </div>
+    </a>
+    
+    <a href="{{ '/links' | url }}">
+    <div class="square", id="links_square">
+        <h1>links</h1>
+    </div>
+    </a>
+</div>
+<link rel="stylesheet" href="/styles/style.css">
