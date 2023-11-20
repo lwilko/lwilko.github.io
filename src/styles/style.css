@@ -47,8 +47,9 @@ header a {
 /* Footer styles */
 footer {
     text-align: right;
-    padding: 0.5em;
-    padding-top: 5em;
+    padding: 0.4em;
+    padding-top: 2em;
+    padding-right: 2.3em;
 
 }
 
