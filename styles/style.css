@@ -58,7 +58,7 @@ footer p {
 }
 
 /* Homepage */
-.flex-container {
+.homepage-gallery {
     max-width:100%;
     height:auto;
     display:flex;
@@ -70,13 +70,13 @@ footer p {
     padding-right: 30%;
  }
 
-.square {
-    width: 20em;
+.square-link {
+    width: 15em;
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
-    height: 20em;
+    height: 15em;
     float:left;
     text-align: center;
     background-color: "#CE7DEC";
@@ -84,16 +84,24 @@ footer p {
     background-repeat: no-repeat;
     background-position: center;
     margin:1em;
+    transition: opacity 0.2s ease;
 }
 
-.square:hover {
+.square-link:hover {
     opacity: 0.85;
+    background-color: "#CE7DEC";
 }
 
-.square h1 {
+.square-link h1 {
     font-family: "Andale Mono", Courier, monospace;
     color: aliceblue;
     background-color: black;
+}
+
+.square-link:hover h1 {
+    font-family: "Andale Mono", Courier, monospace;
+    color: black;
+    background-color: white;
 }
 
 #about_square {
