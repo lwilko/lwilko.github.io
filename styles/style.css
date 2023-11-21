@@ -71,12 +71,12 @@ footer p {
  }
 
 .square-link {
-    width: 15em;
+    width: 20em;
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
-    height: 15em;
+    height: 20em;
     float:left;
     text-align: center;
     background-color: "#CE7DEC";
@@ -152,7 +152,7 @@ footer p {
      column-count:         3;
     }
 
-    .flex-container {
+    .homepage-gallery {
         padding-left: 20%;
         padding-right: 20%;
     }
@@ -170,7 +170,7 @@ footer p {
      column-count:         2;
     }
 
-    .flex-container {
+    .homepage-gallery {
         padding-left: 8%;
         padding-right: 8%;
     }
@@ -183,7 +183,7 @@ footer p {
      column-count:         1;
     }
 
-    .flex-container {
+    .homepage-gallery {
         padding-left: 1%;
         padding-right: 1%;
     }
