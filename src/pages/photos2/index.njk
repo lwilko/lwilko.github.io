@@ -1,0 +1,65 @@
+---
+title: Levin Wilkinson - Photography
+permalink: /photos2/
+layout: 'layout_pages.njk'
+---
+
+<div class="main-body">
+    <h2>photography</h2>
+    <p>I shoot 35mm film (most photos in this gallery were shot on Portra 400).</p>
+</div>
+
+<div class="gallery2">
+    <div class="gallery2-item" onclick="openModal('/assets/gallery-001.jpg')">
+        {% image "assets/images/gallery-001.jpg", "A photo of Cockburn Street in Edinburgh with colourful bunting", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
+    </div>
+    <div class="gallery2-item" onclick="openModal('/assets/gallery-002.jpg')">
+        {% image "assets/images/gallery-002.jpg", "A photo of Appleton Tower in Edinburgh in the afternoon sun", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
+    </div>
+    <div class="gallery2-item" onclick="openModal('/assets/gallery-003.jpg')">
+        {% image "assets/images/gallery-003.jpg", "A photo of the setting sun's light on tenement buildings in Edinburgh", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
+    </div>
+    <div class="gallery2-item" onclick="openModal('/assets/gallery-004.jpg')">
+        {% image "assets/images/gallery-004.jpg", "A photo of rooftops under a cloudy sky in Edinburgh", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
+    </div>
+    <div class="gallery2-item" onclick="openModal('/assets/gallery-005.jpg')">
+        {% image "assets/images/gallery-005.jpg", "A photo of two people sitting on a grassy hill overlooking Cramond Island", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
+    </div>
+    <div class="gallery2-item" onclick="openModal('/assets/gallery-006.jpg')">
+        {% image "assets/images/gallery-006.jpg", "A photo of a tenement stairwell skylight taken from the ground floor", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
+    </div>
+    <div class="gallery2-item" onclick="openModal('/assets/gallery-007.jpg')">
+        {% image "assets/images/gallery-007.jpg", "A photo of Heriot Place in Edinburgh, looking out onto Edinburgh Castle", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
+    </div>
+    <div class="gallery2-item" onclick="openModal('/assets/gallery-008.jpg')">
+        {% image "assets/images/gallery-008.jpg", "A photo looking out across Edinburgh at Salisbury Crags", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
+    </div>
+    <div class="gallery2-item" onclick="openModal('/assets/gallery-009.jpg')">
+        {% image "assets/images/gallery-009.jpg", "A photo of a cycle line sign taken at night", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
+    </div>
+    <div class="gallery2-item" onclick="openModal('/assets/gallery-010.jpg')">
+        {% image "assets/images/gallery-010.jpg", "A photo of yellow leaves blowing in the wind on barren trees", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
+    </div>
+    <div class="gallery2-item" onclick="openModal('/assets/gallery-011.jpg')">
+        {% image "assets/images/gallery-011.jpg", "A photo of the photographer's grandmother's kitchen, with hanging plants by the window", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
+    </div>
+    <div class="gallery2-item" onclick="openModal('/assets/gallery-012.jpg')">
+        {% image "assets/images/gallery-012.jpg", "A photo of a lamppost surrounded by cherry blossom trees, taken at night", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
+    </div>
+    <div class="gallery2-item" onclick="openModal('/assets/gallery-013.jpg')">
+        {% image "assets/images/gallery-013.jpg", "A photo of the Scott Monument in Edinburgh, next to a ride at the Christmas Markets", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
+    </div>
+    <div class="gallery2-item" onclick="openModal('/assets/gallery-014.jpg')">
+        {% image "assets/images/gallery-014.jpg", "A photo of the disco ball hanging above a room of student partygoers", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
+    </div>
+    <div class="gallery2-item" onclick="openModal('/assets/gallery-015.jpg')">
+        {% image "assets/images/gallery-015.jpg", "A photo of a small white dog poking its head through a garden gate", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
+    </div>
+
+    <div class="modal" id="myModal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+</div>
+
+<script src="/js/scripts.js"></script>
