@@ -1,37 +1,45 @@
-const image = require("@11ty/eleventy-img");
+const path = require('path');
+const image = require('@11ty/eleventy-img');
 
 module.exports = function (eleventyConfig) {
-    eleventyConfig.addNunjucksAsyncShortcode("image", async function (src, alt, sizes) {
-        if (alt === undefined) {
-            // You can throw an error here if alt is missing.
-            throw new Error(`Missing \`alt\` on myimage from: ${src}`);
-        }
+  // Shortcode: eleventy-img image generation
+  eleventyConfig.addNunjucksAsyncShortcode('image', async function (src, alt, sizes) {
+    if (alt === undefined) {
+      // Throw an error here if alt text is missing
+      throw new Error(`Missing \`alt\` on "${alt}" from: ${src}`);
+    }
 
-        let metadata = await image(`src/${src}`, {
-            widths: [300, 600, 900],
-            formats: ["jpeg", "png", "webp"], // Include "png" in the formats array
-            outputDir: "dist/assets/images/", // Adjusted output directory
-        });
-
-        let imageAttributes = {
-            alt,
-            sizes,
-            loading: "lazy",
-            decoding: "async",
-        };
-
-        // You need to check and choose the correct format and size here.
-        return image.generateHTML(metadata, imageAttributes);
+    let metadata = await image(`src/assets/images/${src}`, {
+      widths: [300, 600, 900],
+      formats: ['jpeg', 'png', 'webp'],
+      outputDir: 'dist/img/',
+      filenameFormat: function (id, src, width, format) {
+        const extension = path.extname(src);
+        const name = path.basename(src, extension);
+        return `${name}-${width}.${format}`;
+      }, // Closing parenthesis was added here
     });
 
-    eleventyConfig.addPassthroughCopy("src/assets");
-    eleventyConfig.addPassthroughCopy("src/styles");
-    eleventyConfig.addPassthroughCopy("src/js");
-
-    return {
-        dir: {
-            input: "src",
-            output: "dist"
-        }
+    let imageAttributes = {
+      alt,
+      sizes,
+      loading: 'lazy',
+      decoding: 'async',
     };
+
+    return image.generateHTML(metadata, imageAttributes);
+  });
+
+  // Passthrough copies
+  eleventyConfig.addPassthroughCopy('src/assets');
+  eleventyConfig.addPassthroughCopy('src/styles');
+  eleventyConfig.addPassthroughCopy('src/js');
+
+  // Input/output configs
+  return {
+    dir: {
+      input: 'src',
+      output: 'dist',
+    },
+  };
 };
