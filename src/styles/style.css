@@ -44,6 +44,8 @@ header a {
 
 .main-body img {
     max-width: 100%;
+    height:auto;
+    display: block;
 }
 
 .emph {
