@@ -33,6 +33,7 @@ header {
 
 header a {
     color: black;
+    font-weight: bold;
     font-family: "Andale Mono", Courier, monospace;
 }
 
