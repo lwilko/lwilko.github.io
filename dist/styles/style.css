@@ -48,6 +48,16 @@ header a {
     display: block;
 }
 
+.about-body {
+    padding-left: 30%;
+    padding-right: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-body img {
+    max-width: 100%;
+}
+
 .emph {
     color: purple;
     font-weight: bold;
