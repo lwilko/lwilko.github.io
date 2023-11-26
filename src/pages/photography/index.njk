@@ -9,22 +9,57 @@ layout: 'layout_pages.njk'
     <p>I shoot 35mm film (most photos in this gallery were shot on Portra 400).</p>
 </div>
 
-<div class="gallery">
-    {% image "gallery-01.jpg", "A photo of Cockburn Street in Edinburgh with colourful bunting", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
-    {% image "gallery-02.jpg", "A photo of Appleton Tower in Edinburgh in the afternoon sun", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
-    {% image "gallery-03.jpg", "A photo of the setting sun's light on tenement buildings in Edinburgh", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
-    {% image "gallery-04.jpg", "A photo of rooftops under a cloudy sky in Edinburgh", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
-    {% image "gallery-05.jpg", "A photo of two people sitting on a grassy hill overlooking Cramond Island", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
-    {% image "gallery-06.jpg", "A photo of a tenement stairwell skylight taken from the ground floor", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
-    {% image "gallery-07.jpg", "A photo of Heriot Place in Edinburgh, looking out onto Edinburgh Castle", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
-    {% image "gallery-08.jpg", "A photo looking out across Edinburgh at Salisbury Crags", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
-    {% image "gallery-09.jpg", "A photo of a cycle line sign taken at night", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
-    {% image "gallery-10.jpg", "A photo of yellow leaves blowing in the wind on barren trees", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
-    {% image "gallery-11.jpg", "A photo of the photographer's grandmother's kitchen, with hanging plants by the window", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
-    {% image "gallery-12.jpg", "A photo of a lamppost surrounded by cherry blossom trees, taken at night", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
-    {% image "gallery-13.jpg", "A photo of the Scott Monument in Edinburgh, next to a ride at the Christmas Markets", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
-    {% image "gallery-14.jpg", "A photo of the disco ball hanging above a room of student partygoers", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
-    {% image "gallery-15.jpg", "A photo of a small white dog poking its head through a garden gate", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
+<div class="gallery2">
+    <div class="gallery2-item" onclick="openModal('/assets/images/gallery-01.jpg')">
+        {% image "gallery-01.jpg", "A photo of Cockburn Street in Edinburgh with colourful bunting", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
+    </div>
+    <div class="gallery2-item" onclick="openModal('/assets/images/gallery-02.jpg')">
+        {% image "gallery-02.jpg", "A photo of Appleton Tower in Edinburgh in the afternoon sun", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
+    </div>
+    <div class="gallery2-item" onclick="openModal('/assets/images/gallery-03.jpg')">
+        {% image "gallery-03.jpg", "A photo of the setting sun's light on tenement buildings in Edinburgh", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
+    </div>
+    <div class="gallery2-item" onclick="openModal('/assets/images/gallery-04.jpg')">
+        {% image "gallery-04.jpg", "A photo of rooftops under a cloudy sky in Edinburgh", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
+    </div>
+    <div class="gallery2-item" onclick="openModal('/assets/images/gallery-05.jpg')">
+        {% image "gallery-05.jpg", "A photo of two people sitting on a grassy hill overlooking Cramond Island", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
+    </div>
+    <div class="gallery2-item" onclick="openModal('/assets/images/gallery-06.jpg')">
+        {% image "gallery-06.jpg", "A photo of a tenement stairwell skylight taken from the ground floor", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
+    </div>
+    <div class="gallery2-item" onclick="openModal('/assets/images/gallery-07.jpg')">
+        {% image "gallery-07.jpg", "A photo of Heriot Place in Edinburgh, looking out onto Edinburgh Castle", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
+    </div>
+    <div class="gallery2-item" onclick="openModal('/assets/images/gallery-08.jpg')">
+        {% image "gallery-08.jpg", "A photo looking out across Edinburgh at Salisbury Crags", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
+    </div>
+    <div class="gallery2-item" onclick="openModal('/assets/images/gallery-09.jpg')">
+        {% image "gallery-09.jpg", "A photo of a cycle line sign taken at night", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
+    </div>
+    <div class="gallery2-item" onclick="openModal('/assets/images/gallery-10.jpg')">
+        {% image "gallery-10.jpg", "A photo of yellow leaves blowing in the wind on barren trees", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
+    </div>
+    <div class="gallery2-item" onclick="openModal('/assets/images/gallery-11.jpg')">
+        {% image "gallery-11.jpg", "A photo of the photographer's grandmother's kitchen, with hanging plants by the window", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
+    </div>
+    <div class="gallery2-item" onclick="openModal('/assets/images/gallery-12.jpg')">
+        {% image "gallery-12.jpg", "A photo of a lamppost surrounded by cherry blossom trees, taken at night", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
+    </div>
+    <div class="gallery2-item" onclick="openModal('/assets/images/gallery-13.jpg')">
+        {% image "gallery-13.jpg", "A photo of the Scott Monument in Edinburgh, next to a ride at the Christmas Markets", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
+    </div>
+    <div class="gallery2-item" onclick="openModal('/assets/images/gallery-14.jpg')">
+        {% image "gallery-14.jpg", "A photo of the disco ball hanging above a room of student partygoers", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
+    </div>
+    <div class="gallery2-item" onclick="openModal('/assets/images/gallery-15.jpg')">
+        {% image "gallery-15.jpg", "A photo of a small white dog poking its head through a garden gate", "(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw" %}
+    </div>
+
+    <div class="modal" id="myModal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
 </div>
 
-</html>
+<script src="/js/scripts.js"></script>
